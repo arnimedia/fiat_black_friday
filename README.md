@@ -1,2 +1,2 @@
-# fiat_black_friday
+# Fiat Black Friday
 Fiat Black Friday
