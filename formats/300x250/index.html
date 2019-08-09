@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Fiat – 300x250 – Black Friday</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+        <!-- build:css css/style.min.css -->
+        <link rel="stylesheet" type="text/css" href="css/fonts.css">
+      	<link rel="stylesheet" type="text/css" href="css/scene.css">
+        <!-- /build -->
+
+        <!-- Secured external Libraries and Dependencies - REQUIRED -->
+        <script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/createjs/createjs-2015.11.26.min.js"></script>
+        <script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/jquery/1_11_3/jquery.min.js"></script>
+
+        <!-- Secured external Libraries and Dependencies - OPTIONAL -->
+        <script src="https://secure-ds.serving-sys.com/BurstingcachedScripts/libraries/greensock/1_19_0/TweenMax.min.js"></script>
+
+        <!-- Internal Libraries and Dependencies -->
+        <!-- build:js js/script.min.js -->
+        <script type="text/javascript" src="../../lib/SplitText.min.js"></script>
+        <script type="text/javascript" src="../../lib/AdHelper.min.js"></script>
+
+        <script type="text/javascript" src="../../common-components/__global.js"></script>
+        <script type="text/javascript" src="../../common-components/_flow-controller-base.js"></script>
+        <script type="text/javascript" src="../../common-components/_app-controller-base.js"></script>
+
+        <script type="text/javascript" src="js/flow-controller.js"></script>
+        <script type="text/javascript" src="js/app-controller.js"></script>
+
+        <!-- /build -->
+
+        <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/adKit/adkit.js"></script>
+
+        <script type="text/javascript">
+            adkit.onReady(init);
+            function init() {
+
+              // For dynamic IDs update look in _flow-controller-base
+              // For copy update please look in config.js
+
+              window.onload = entryPoint();
+            }
+        </script>
+    </head>
+
+<body>
+    <div id="container">
+        <div id="black-fader"></div>
+
+        <!-- Cars  -->
+        <div id="spotlight"></div>
+        <div id="base1">
+                <div id="tire_back1" class="tire1">
+                    <div class="tire_spin1">
+                        <div class="tire_end1"></div>
+                        <div class="tire_mid1"></div>
+                        <div class="tire_start1"></div>
+                    </div>
+                </div>
+                <div id="tire_front1" class="tire1">
+                    <div class="tire_spin1">
+                        <div class="tire_end1"></div>
+                        <div class="tire_mid1"></div>
+                        <div class="tire_start1"></div>
+                    </div>
+                </div>
+        </div> 
+
+        <div id="base2">
+                <div id="tire_back2" class="tire2">
+                    <div class="tire_spin2">
+                        <div class="tire_end2"></div>
+                        <div class="tire_mid2"></div>
+                        <div class="tire_start2"></div>
+                    </div>
+                </div>
+                <div id="tire_front2" class="tire2">
+                    <div class="tire_spin2">
+                        <div class="tire_end2"></div>
+                        <div class="tire_mid2"></div>
+                        <div class="tire_start2"></div>
+                    </div>
+                </div>
+        </div> 
+
+        <div id="base3">
+                <div id="tire_back3" class="tire3">
+                    <div class="tire_spin3">
+                        <div class="tire_end3"></div>
+                        <div class="tire_mid3"></div>
+                        <div class="tire_start3"></div>
+                    </div>
+                </div>
+                <div id="tire_front3" class="tire3">
+                    <div class="tire_spin3">
+                        <div class="tire_end3"></div>
+                        <div class="tire_mid3"></div>
+                        <div class="tire_start3"></div>
+                    </div>
+                </div>
+        </div> 
+
+        <img id="image1">
+
+        <!-- Welcome transition -->
+
+        <div id="welcome" class="centerThis">
+            <div id="div1"></div>
+            <div id="div2"></div>
+        </div>
+
+        <div id="title1"></div>
+        <div id="subtitle1"></div>
+
+        <div id="title2"></div>
+        <div id="title3"></div>
+        <div id="title4"></div>
+
+        <div id="title5"></div>
+        <div id="subtitle5"></div>
+
+        <div id="title6"></div>
+
+        <img id="logo" class="logo centerThis" src="img/fiat_logotype.png">
+        
+        <div id="transition" class="centerThis">
+            <div id="tr1"></div>
+            <div id="tr2"></div>
+            <div id="tr3"></div>
+            <div id="tr4"></div>
+            <div id="tr5"></div>
+            <div id="tr6"></div>
+            <div id="tr7"></div>
+
+            <div id="tr11"></div>
+            <div id="tr22"></div>
+            <div id="tr33"></div>
+            <div id="tr44"></div>
+            <div id="tr55"></div>
+            <div id="tr66"></div>
+            <div id="tr77"></div>
+        </div>
+
+        <div id="cta-text" class="cta">FIND OUT MORE</div>
+
+        <div id="terms"></div>
+        <div id="terms_cta">View Terms & Conditions</div>
+    </div>
+
+    <!-- createjs canvas -->
+    <canvas id="canvas" width="300" height="250" style="background-color:#000000"></canvas>
+    
+    </div>
+    <div id="banner_border"></div>
+</body>
+</html>

@@ -1,0 +1,1013 @@
+.centerThisVertical {
+    top: 50%;
+    -webkit-transform: translateY(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateY(-50%); /* IE 9 */
+    transform: translateY(-50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+.centerThisHorizontal {
+    left: 50%;
+    -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translateX(-50%); /* IE 9 */
+    transform: translateX(-50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+.centerThis {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+    -ms-transform: translate(-50%, -50%); /* IE 9 */
+    transform: translate(-50%, -50%); /* IE 10, Fx 16+, Op 12.1+ */
+    position: absolute;
+}
+
+
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+    background-color: #efefef;
+    margin: 0px;
+    padding: 0px;
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    color: #fff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+
+#container {
+    position: absolute;
+    width: 728px;
+    height: 90px;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 100;
+    background-color: #000000;
+}
+
+#black-fader {
+    position: absolute;
+    z-index: 9998;
+    width: 728px;
+    height: 90px;
+    pointer-events: none;
+    background-color: #000000;
+}
+
+#canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+#banner_border {
+    z-index: 99999;
+    position: absolute;
+    border: 1px solid #666666;
+    width: 728px;
+    height: 90px;
+    pointer-events: none;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999
+}
+
+#copy-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.copy {
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    line-height: 1;
+	font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+}
+
+.subheader {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.1;
+}
+
+sup{
+    font-size: 7px !important;
+    vertical-align:super;
+}
+
+#title1-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 45px;
+    left: 19px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    text-align: left;
+}
+#title8-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 45px;
+    left: 19px;
+    font-size: 19px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    text-align: left;
+}
+#subtitle-line8-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 65px;
+    left: -60px;
+    font-size: 12px;
+    pointer-events: none;
+    letter-spacing: -0.1px;
+    font-weight: 400;
+}
+#subtitle-line1-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    pointer-events: none;
+}
+
+#title2-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 22px;
+    pointer-events: none;
+    color: #244057;
+    
+}
+
+#subtitle-line2-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #244057;
+}
+
+#title3-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    pointer-events: none;
+    color: #f4f0de;
+    opacity: 0;
+}
+
+#subtitle-line3-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #f4f0de;
+}
+
+#subtitle-line3 div:nth-child(3) {
+    font-size: 7px !important;
+    vertical-align: super;
+    margin-left: -4px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+#subtitle-line4 div:nth-child(3) {
+    font-size: 7px !important;
+    vertical-align: super;
+    margin-left: -4px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+#subtitle-line5 div:nth-child(3) {
+    font-size: 7px !important;
+    vertical-align: super;
+    margin-left: -4px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+#subtitle-line6 div:nth-child(3) {
+    font-size: 7px !important;
+    vertical-align: super;
+    margin-left: -4px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+#subtitle-line7 div:nth-child(3) {
+    font-size: 7px !important;
+    vertical-align: super;
+    margin-left: -4px;
+    margin-top: 0px;
+    display: inline-block;
+}
+
+
+#title4-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    pointer-events: none;
+    color: #244057;
+    opacity: 0;
+}
+
+#subtitle-line4-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #244057;
+    letter-spacing: 0.5px;
+}
+
+#title5-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    pointer-events: none;
+    color: #f4f0de;
+    opacity: 0;
+}
+
+#subtitle-line5-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #f4f0de;
+}
+
+#title6-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    pointer-events: none;
+    color: #244057;
+    opacity: 0;
+}
+
+#subtitle-line6-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #244057;
+    letter-spacing: 0.5px;
+}
+
+#title7-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 42px;
+    pointer-events: none;
+    color: #f4f0de;
+    opacity: 0;
+}
+
+#subtitle-line7-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 187px;
+    pointer-events: none;
+    color: #f4f0de;
+}
+
+.cta {
+    font-size: 13px;
+    color: #FFF;
+    padding: 22px 0px;
+    text-transform: uppercase;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    width: 80px;
+    height: 90px;
+    bottom: 1px;
+    right: 1px;
+    background: #990033;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+}
+
+.cta:hover {
+    background-color: #000;
+}
+
+.logo {
+    position: absolute;
+    opacity: 0;
+}
+
+#logo {
+    height: 58px;
+    left: 48px;
+    opacity: 0;
+}
+
+#logo-fca {
+    height: 14px;
+    bottom: 14px;
+    left: 67px;
+}
+
+#terms {
+    font-size: 8px;
+    color: #fff;
+    padding: 10px 20px;
+    width: 90%;
+    position: absolute;
+    bottom: -60px;
+    font-family: "Arial", sans-serif;
+    left: -8px;
+    letter-spacing: 0.25px;
+    line-height: 1;
+    /* opacity: 0; */
+    background: rgba(0,0,0,0.7);
+}
+
+ /* #terms:after {
+    position: absolute;
+    content: "";
+    width: 38px;
+    height: 7px;
+    background: transparent url('../img/leasys.png') no-repeat;
+} */
+
+#terms:before {
+    content:"*";
+    margin-left: -3px;
+    position: absolute;
+} 
+
+#terms1 {
+    font-size: 7px;
+    color: #333333;
+    padding: 5px 7px;
+    position: absolute;
+    bottom: 5px;
+    font-family: "Arial", sans-serif;
+    opacity: 0;
+}
+
+#terms_cta {
+    font-size: 8px;
+    color: #fff;
+    padding: 5px 7px;
+    position: absolute;
+    bottom: -2px;
+    right: 81px;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    /* background: rgba(0,0,0,0.7); */
+    opacity: 0;
+    visibility: hidden;
+}
+
+#terms1:before {
+    content:"†";
+    margin-left: -3px;
+    margin-top: -1px;
+    font-size: 5px;
+    position: absolute;
+    vertical-align:super;
+} 
+
+#leasys{
+    position: absolute;
+    right: 190px;
+    bottom: 4px;
+    width: 55px;
+    opacity: 0;
+}
+
+#befree{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    width: 55px;
+    opacity: 0;
+}
+
+#befree_white{
+    position: absolute;
+    right: 30px;
+    bottom: 10px;
+    width: 55px;
+}
+
+#image1{ 
+    width: 728px; 
+    height: 90px;
+    position: absolute;
+    } 
+
+
+
+.tire {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    bottom: 0;
+}
+
+.tire_spin {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    top: 0; 
+}
+
+.tire_start { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right 0 no-repeat; 
+    width: 70px; 
+    height: 70px;
+}
+
+.tire_mid { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right -70px no-repeat; 
+    width: 70px; 
+    height: 70px; 
+}
+
+.tire_end { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right -140px no-repeat; 
+    width: 70px; 
+    height: 70px;
+    top: 1px; 
+}
+
+#tire_front {  
+    position: absolute; 
+    left: 194px;
+    bottom: 46px;
+    -webkit-transform: scale(.45,.45); 
+}
+
+#tire_back { 
+    position: absolute; 
+    left: 34px;
+    bottom: 46px;
+    -webkit-transform: scale(.45,.45); 
+}
+
+
+/* Fiat 500L */
+
+
+#base1{ 
+    background: transparent url('../img/base_500l.png') no-repeat; 
+    width: 728px; 
+    height: 90px;
+    background-size: 728px 90px;
+    position: absolute;
+    } 
+
+
+
+.tire1 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    bottom: 0;
+}
+
+.tire_spin1 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    top: 0; 
+}
+
+.tire_start1 { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right 0 no-repeat; 
+    width: 70px; 
+    height: 70px;
+}
+
+.tire_mid1 { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right -70px no-repeat; 
+    width: 70px; 
+    height: 70px; 
+}
+
+.tire_end1 { 
+    position: absolute; 
+    background: transparent url('../img/spider_wheel.png') right -140px no-repeat; 
+    width: 70px; 
+    height: 70px;
+    top: 1px; 
+}
+
+#tire_front1 {  
+    position: absolute;
+    left: 125px;
+    bottom: -11px;
+    -webkit-transform: scale(0.31,.31);
+    transform: scale(0.31,.31);
+}
+
+#tire_back1 { 
+    position: absolute;
+    left: 235px;
+    bottom: -11px;
+    -webkit-transform: scale(0.31,.31);
+    transform: scale(0.31,.31);
+}
+
+/* Fiat 500L */
+/* Fiat 500 */
+
+#base2{ 
+    background: transparent url('../img/base_500.png') no-repeat; 
+    width: 728px; 
+    height: 90px;
+    background-size: 728px 90px;
+    position: absolute;
+    } 
+
+
+
+.tire2 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    bottom: 0;
+}
+
+.tire_spin2 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    top: 0; 
+}
+
+.tire_start2 { 
+    position: absolute; 
+    background: transparent url('../img/500_wheel.png') right 0 no-repeat; 
+    width: 70px; 
+    height: 70px;
+}
+
+.tire_mid2 { 
+    position: absolute; 
+    background: transparent url('../img/500_wheel.png') right -70px no-repeat; 
+    width: 70px; 
+    height: 70px; 
+}
+
+.tire_end2 { 
+    position: absolute; 
+    background: transparent url('../img/500_wheel.png') right -140px no-repeat; 
+    width: 70px; 
+    height: 70px;
+    top: 1px; 
+}
+
+#tire_front2 {  
+    position: absolute; 
+    left: 232px;
+    bottom: -12px;
+    -webkit-transform: scale(.33,.33); 
+    transform: scale(0.33,.33);
+}
+
+#tire_back2 { 
+    position: absolute; 
+    left: 124px;
+    bottom: -12px;
+    -webkit-transform: scale(.33,.33); 
+    transform: scale(0.33,.33);
+}
+
+/* Fiat 500 */
+/* Fiat 500 SUV */
+
+#base3{ 
+    background: transparent url('../img/base_500suv.png') no-repeat; 
+    width: 728px; 
+    height: 90px;
+    background-size: 728px 90px;
+    position: absolute;
+    } 
+
+
+
+.tire3 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    bottom: 0;
+}
+
+.tire_spin3 {
+    position: absolute; 
+    background: transparent; 
+    width: 70px; 
+    height: 70px; 
+    left: 0; 
+    top: 0; 
+}
+
+.tire_start3 { 
+    position: absolute; 
+    background: transparent url('../img/500suv_wheel.png') right 0 no-repeat; 
+    width: 70px; 
+    height: 70px;
+}
+
+.tire_mid3 { 
+    position: absolute; 
+    background: transparent url('../img/500suv_wheel.png') right -70px no-repeat; 
+    width: 70px; 
+    height: 70px; 
+}
+
+.tire_end3 { 
+    position: absolute; 
+    background: transparent url('../img/500suv_wheel.png') right -140px no-repeat; 
+    width: 70px; 
+    height: 70px;
+    top: 1px; 
+}
+
+#tire_front3 {  
+    position: absolute; 
+    left: 233px;
+    bottom: -12px;
+    -webkit-transform: scale(.33,.33); 
+    transform: scale(0.33,.33);
+}
+
+#tire_back3 { 
+    position: absolute; 
+    left: 121px;
+    bottom: -12px;
+    -webkit-transform: scale(.33,.33); 
+    transform: scale(0.33,.33);
+}
+
+/* Fiat 500 */
+
+
+
+
+#welcome{
+    width: 980px;
+    height: 140px;
+    position: absolute;
+}
+
+#div1{
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background: #7fc5f5;
+    position: absolute;
+}
+
+#div2{
+    width: 50%;
+    height: 100%;
+    right: 0;
+    background: #d0285d;
+    position: absolute;
+}
+
+#transition{
+    width: 900px;
+    height: 140px;
+    position: absolute;
+    left: 333px;
+}
+
+/* First set of lines */
+
+#tr1{
+    width: 140px;
+    height: 100%;
+    background: #7fc5f5;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr2{
+    width: 140px;
+    height: 100%;
+    left: 140px;
+    background: #56b08a;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr3{
+    width: 140px;
+    height: 100%;
+    left: 280px;
+    background: #f1e957;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr4{
+    width: 140px;
+    height: 100%;
+    left: 420px;
+    background: #b5171e;
+    position: absolute;
+    display: inline-block;
+}
+#tr5{
+    width: 140px;
+    height: 100%;
+    left: 560px;
+    background: #5472b1;
+    position: absolute;
+    display: inline-block;
+}
+#tr6{
+    width: 140px;
+    height: 100%;
+    left: 700px;
+    background: #eeb0d7;
+    position: absolute;
+    display: inline-block;
+}
+#tr7{
+    width: 140px;
+    height: 100%;
+    left: 840px;
+    background: #eeb0d7;
+    position: absolute;
+    display: inline-block;
+}
+
+/* Second set of lines */
+
+#tr11{
+    width: 140px;
+    height: 100%;
+    background: #7fc5f5;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr22{
+    width: 140px;
+    height: 100%;
+    left: 140px;
+    background: #b5171e;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr33{
+    width: 140px;
+    height: 100%;
+    left: 280px;
+    background: #eeb0d7;
+    position: absolute;
+    display: inline-block;
+}
+
+#tr44{
+    width: 140px;
+    height: 100%;
+    left: 420px;
+    background: #56b08a;
+    position: absolute;
+    display: inline-block;
+}
+#tr55{
+    width: 140px;
+    height: 100%;
+    left:560px;
+    background: #5472b1;
+    position: absolute;
+    display: inline-block;
+}
+#tr66{
+    width: 140px;
+    height: 100%;
+    left: 700px;
+    background: #f1e957;
+    position: absolute;
+    display: inline-block;
+}
+#tr77{
+    width: 140px;
+    height: 100%;
+    left: 840px;
+    background: #eeb0d7;
+    position: absolute;
+    display: inline-block;
+}
+
+
+#title1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 16px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    font-size: 38px;
+    text-align: center;
+    line-height: 1;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+
+#subtitle1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 48px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    font-size: 26px;
+    text-align: center;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+}
+
+#title2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 34px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: 161px;
+}
+
+#title3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 34px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: 161px;
+}
+
+#title4 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 34px;
+    pointer-events: none;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: 24px;
+    text-align: center;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: 161px;
+}
+
+#title5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 8px;
+    color: #000;
+    pointer-events: none;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: 23px;
+    text-align: center;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: -205px;
+}
+
+#subtitle5 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 30px;
+    color: #000;
+    pointer-events: none;
+    letter-spacing: 0.3px;
+    font-size: 15px;
+    /* text-align: center; */
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: 10px;
+}
+
+#title6 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 48px;
+    color: #000;
+    pointer-events: none;
+    letter-spacing: 1px;
+    line-height: 1;
+    font-size: 15px;
+    font-family: 'FiatAdvert-Euro', Arial, sans-serif;
+    text-transform: uppercase;
+    left: 10px;
+}
+
+
+#spotlight{ 
+    background: transparent url('../img/spotlight.jpg') no-repeat; 
+    width: 728px; 
+    height: 90px;
+    background-size: 728px 90px;
+    position: absolute;
+
+    } 
+
+

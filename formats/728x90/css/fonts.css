@@ -1,0 +1,14 @@
+
+
+@font-face {
+  font-family: 'FiatAdvert-Euro';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/FiatAdvert-Euro.woff);
+}
+@font-face {
+  font-family: 'Open-Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/OpenSans-Regular.woff);
+}
